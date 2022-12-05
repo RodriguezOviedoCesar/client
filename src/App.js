@@ -22,6 +22,7 @@ import AddProductView from './views/Products/AddProducts';
 import EditProductsView from './views/Products/EditProducts';
 import OrdelListCreate from './views/vendedor/OrderList';
 import OrderView from './views/orders/orderview';
+import PruebaAutcomplete from './views/orders/orderComponents/pruebaAutocomplete';
 
 function App() {
 
@@ -52,6 +53,7 @@ return (
       <Route path='/category' element={<CategoryView/>} />
       <Route path='/category/add' element={<AddCategory/>} />
       <Route path='/category/edit/:id' element={<EditCategoryView/>} />
+      <Route path='/autocomplete' element={<PruebaAutcomplete/>}/>
     </Routes>
   </Router>
 );

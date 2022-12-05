@@ -40,7 +40,7 @@ const CreateOrder = () => {
     if (h.status === 200) {
       setResponse(true);
       setMessageTrue('Creado correctamente');
-      setUrl(h.data.codigo)
+      setUrl(h.data._id)
     } else {
       setErrors(true);
       setFail(h.data.message);
@@ -95,13 +95,13 @@ const CreateOrder = () => {
                         name="codigo"
                         type="text"
                         className="form-control"
-                        placeholder="Ingruser.username}ese nombre"
+                        placeholder="Codigo"
                       ></input>
                     </div>
                     <div className="form-group">
                       <label>Estado</label>
                       <select
-                        value={order.type}
+                        
                         onChange={handleChange}
                         name="type"
                         className="form-control"
